@@ -1,5 +1,10 @@
 package com.notetaking.services;
 
-public class INoteService {
+import java.util.List;
 
+import com.notetaking.model.NotesModel;
+
+public interface INoteService {
+
+	List<NotesModel> findAll();
 }
