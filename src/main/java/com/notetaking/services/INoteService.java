@@ -7,4 +7,6 @@ import com.notetaking.model.NotesModel;
 public interface INoteService {
 
 	List<NotesModel> findAll();
+
+	
 }

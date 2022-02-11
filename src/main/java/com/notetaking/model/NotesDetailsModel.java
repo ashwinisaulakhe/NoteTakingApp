@@ -25,7 +25,13 @@ public class NotesDetailsModel {
 	@Column(name="actual_Duration",nullable=false)
 	private String actual_Duration;
 	
+	
+	
 	public NotesDetailsModel() {
+		super();
+	}
+
+	public NotesDetailsModel(String string, String string2) {
 		super();
 	}
 
@@ -93,12 +99,26 @@ public class NotesDetailsModel {
 		this.task_Discription = task_Discription;
 	}
 
-	public String getActual_Discription() {
+	public String getActual_Duration() {
+		// TODO Auto-generated method stub
 		return actual_Duration;
 	}
 
-	public void setActual_Discription(String actual_Discription) {
-		this.actual_Duration = actual_Discription;
+	public void setActual_Duration(String actual_Duration) {
+		this.actual_Duration = actual_Duration;
 	}
+
+	public void setId(int task_Details_Id2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+
+	
+
+	
+
 	
 }

@@ -36,6 +36,10 @@ public class NotesModel {
 	}
 
 	
+	public NotesModel(String task_assigine2, String expected_time2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public String toString() {
 		return "NotesModel [task_id=" + task_id + ", task_assigine=" + task_assigine + ", expected_time="
@@ -99,6 +103,13 @@ public class NotesModel {
 
 	public void setExpected_time(String expected_time) {
 		this.expected_time = expected_time;
+	}
+
+	
+
+	public void setId(int task_Id2) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

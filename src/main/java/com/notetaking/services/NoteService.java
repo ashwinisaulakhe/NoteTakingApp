@@ -8,11 +8,12 @@ import com.notetaking.model.NotesModel;
 import com.notetaking.repository.ToDoRepository;
 @Service
 
-public class NoteService {
+public class NoteService implements INoteService {
 	
 	@Autowired 
 	private ToDoRepository repository;
 	
+	@Override
 	public List<NotesModel> findAll(){
 		return (List<NotesModel>) repository.findAll();
 	}

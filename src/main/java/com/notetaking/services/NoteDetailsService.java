@@ -9,13 +9,15 @@ import com.notetaking.model.NotesDetailsModel;
 import com.notetaking.repository.ToDoNotesDetailsRepository;
 
 @Service
-public class NoteDetailsService {
+public class NoteDetailsService implements INoteDetailsService{
 
 	@Autowired 
 	private ToDoNotesDetailsRepository detailsRepository;
 	
+	@Override
 	public List<NotesDetailsModel> findAll(){
 		return (List<NotesDetailsModel>) detailsRepository.findAll();
 		
 }
+
 }

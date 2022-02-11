@@ -7,13 +7,10 @@ public class NoteListViewModel {
 	private ArrayList<NotesModel> todoList =new ArrayList<NotesModel>();
 
 	
-	public NoteListViewModel() {
+	
+	public NoteListViewModel(ArrayList<NotesModel> todoListN) {
 		super();
-	}
-
-	public NoteListViewModel(ArrayList<NotesModel> todoList) {
-		super();
-		this.todoList = todoList;
+		this.todoList = todoListN;
 	}
 
 	public ArrayList<NotesModel> getTodoList() {
@@ -23,5 +20,12 @@ public class NoteListViewModel {
 	public void setTodoList(ArrayList<NotesModel> todoList) {
 		this.todoList = todoList;
 	}
+
+	public int getTask_Id() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
 	
 }
