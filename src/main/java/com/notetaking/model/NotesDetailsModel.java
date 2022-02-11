@@ -36,8 +36,6 @@ public class NotesDetailsModel {
 		this.actual_Duration = actual_Duration;
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "NotesDetailsModel [Task_Details_Id=" + task_Details_Id + ", task_Discription=" + task_Discription
