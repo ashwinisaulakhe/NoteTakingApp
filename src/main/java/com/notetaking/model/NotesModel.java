@@ -1,16 +1,26 @@
 package com.notetaking.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+import lombok.Data;
+@Data
 @Entity
+@Table(name="task_table")
 public class NotesModel {
 
 	
 	@task_id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int task_id;
+	
+	@Column(name="task_assigine",nullable=false)
 	private String task_assigine;
+	
+	@Column(name="expected_time",nullable=false)
 	private String expected_time;
 	
 	
@@ -36,11 +46,11 @@ public class NotesModel {
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+		long result = 1;
 		result = prime * result + ((expected_time == null) ? 0 : expected_time.hashCode());
 		result = prime * result + ((task_assigine == null) ? 0 : task_assigine.hashCode());
 		result = prime * result + task_id;
-		return result;
+		return (int) result;
 	}
 
 	@Override
@@ -67,7 +77,7 @@ public class NotesModel {
 		return true;
 	}
 
-	public int getTask_id() {
+	public long getTask_id() {
 		return task_id;
 	}
 

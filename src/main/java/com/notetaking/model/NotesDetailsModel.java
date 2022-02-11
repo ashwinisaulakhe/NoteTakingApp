@@ -1,10 +1,15 @@
 package com.notetaking.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Table;
 
+import lombok.Data;
+@Data
 @Entity
+@Table(name="task_details")
 public class NotesDetailsModel {
 	
 	public @interface task_Details_Id {
@@ -13,7 +18,11 @@ public class NotesDetailsModel {
 	@task_Details_Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int task_Details_Id;
+	
+	@Column(name="task_discription",nullable=false)
 	private String task_Discription;
+	
+	@Column(name="actual_Duration",nullable=false)
 	private String actual_Duration;
 	
 	public NotesDetailsModel() {
