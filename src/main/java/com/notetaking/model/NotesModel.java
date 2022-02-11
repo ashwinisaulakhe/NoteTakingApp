@@ -31,6 +31,41 @@ public class NotesModel {
 		return "NotesModel [task_id=" + task_id + ", task_assigine=" + task_assigine + ", expected_time="
 				+ expected_time + "]";
 	}
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((expected_time == null) ? 0 : expected_time.hashCode());
+		result = prime * result + ((task_assigine == null) ? 0 : task_assigine.hashCode());
+		result = prime * result + task_id;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NotesModel other = (NotesModel) obj;
+		if (expected_time == null) {
+			if (other.expected_time != null)
+				return false;
+		} else if (!expected_time.equals(other.expected_time))
+			return false;
+		if (task_assigine == null) {
+			if (other.task_assigine != null)
+				return false;
+		} else if (!task_assigine.equals(other.task_assigine))
+			return false;
+		if (task_id != other.task_id)
+			return false;
+		return true;
+	}
 
 	public int getTask_id() {
 		return task_id;

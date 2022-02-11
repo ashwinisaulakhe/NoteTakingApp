@@ -35,6 +35,41 @@ public class NotesDetailsModel {
 				+ ", actual_Discription=" + actual_Duration + "]";
 	}
 
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((actual_Duration == null) ? 0 : actual_Duration.hashCode());
+		result = prime * result + task_Details_Id;
+		result = prime * result + ((task_Discription == null) ? 0 : task_Discription.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NotesDetailsModel other = (NotesDetailsModel) obj;
+		if (actual_Duration == null) {
+			if (other.actual_Duration != null)
+				return false;
+		} else if (!actual_Duration.equals(other.actual_Duration))
+			return false;
+		if (task_Details_Id != other.task_Details_Id)
+			return false;
+		if (task_Discription == null) {
+			if (other.task_Discription != null)
+				return false;
+		} else if (!task_Discription.equals(other.task_Discription))
+			return false;
+		return true;
+	}
+
 	public int getTask_Details_Id() {
 		return task_Details_Id;
 	}
