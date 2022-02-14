@@ -1,8 +1,8 @@
-package com.notetaking.services;
+package com.notetaking.app.services;
 
 import java.util.List;
 
-import com.notetaking.model.NotesDetailsModel;
+import com.notetaking.app.model.NotesDetailsModel;
 
 public interface INoteDetailsService {
 

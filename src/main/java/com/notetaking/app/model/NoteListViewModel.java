@@ -1,4 +1,4 @@
-package com.notetaking.model;
+package com.notetaking.app.model;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,4 @@ public class NoteListViewModel {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-	
-	
 }

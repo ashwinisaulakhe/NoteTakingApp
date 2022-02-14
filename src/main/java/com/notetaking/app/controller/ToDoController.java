@@ -1,5 +1,4 @@
-package com.notetaking.controller;
-
+package com.notetaking.app.controller;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +7,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.notetaking.model.NoteListViewModel;
-import com.notetaking.model.NotesModel;
-import com.notetaking.repository.ToDoRepository;
+import com.notetaking.app.model.NoteListViewModel;
+import com.notetaking.app.model.NotesModel;
+import com.notetaking.app.Repository.ToDoRepository;
 
 @Controller
 public class ToDoController {
-
+	
 	@Autowired
 	private ToDoRepository toDoRepository;
 	public ToDoController() {

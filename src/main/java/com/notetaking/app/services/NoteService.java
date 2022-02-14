@@ -1,11 +1,12 @@
-package com.notetaking.services;
+package com.notetaking.app.services;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.notetaking.model.NotesModel;
-import com.notetaking.repository.ToDoRepository;
+import com.notetaking.app.model.NotesModel;
+import com.notetaking.app.Repository.ToDoRepository;
 @Service
 
 public class NoteService implements INoteService {

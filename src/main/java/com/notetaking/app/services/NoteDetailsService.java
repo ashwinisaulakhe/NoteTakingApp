@@ -1,12 +1,12 @@
-package com.notetaking.services;
+package com.notetaking.app.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.notetaking.model.NotesDetailsModel;
-import com.notetaking.repository.ToDoNotesDetailsRepository;
+import com.notetaking.app.model.NotesDetailsModel;
+import com.notetaking.app.Repository.ToDoNotesDetailsRepository;
 
 @Service
 public class NoteDetailsService implements INoteDetailsService{
@@ -19,5 +19,4 @@ public class NoteDetailsService implements INoteDetailsService{
 		return (List<NotesDetailsModel>) detailsRepository.findAll();
 		
 }
-
 }

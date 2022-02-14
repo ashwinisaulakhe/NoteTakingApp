@@ -1,4 +1,4 @@
-package com.notetaking.model;
+package com.notetaking.app.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -112,13 +112,6 @@ public class NotesDetailsModel {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
-	
-
-	
-
-	
 
 	
 }
